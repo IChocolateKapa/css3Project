@@ -1,0 +1,107 @@
+/**
+ * Created by hpwu on 2015/5/8.
+ */
+@charset "utf-8";
+
+.bg{
+    min-width: 1000px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.slider{
+    min-width: 1000px;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 30%;
+    top: 70%;
+    text-align: center;
+    margin: auto;
+    /*border: 1px salmon solid;*/
+}
+.slider li{
+    list-style: none;
+    display: inline-block;
+    height: 200px;
+    width: 160px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 3%;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.slider li:nth-of-type(1){
+    background: #02646e;
+}
+
+
+.slider li:nth-of-type(2){
+    background: #eb0837;
+}
+
+
+.slider li:nth-of-type(3){
+    background: #e6674a;
+}
+
+
+.slider li:nth-of-type(4){
+    background: #67b374;
+}
+
+
+.slider li:nth-of-type(5){
+    background: #e61061;
+}
+
+.slider li a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Î¢ÈíÑÅºÚ';
+    color: white;
+    font-size: 2em;
+}
+
+
+.slider li a::after, .slider li a::before{
+    content: "";
+    position: absolute;
+    top: -25%;
+    height: 120px;
+    width: 120px;
+    border: 3px solid white;
+    border-radius:50%;
+    margin-left: 3%;
+    display: block;
+
+}
+
+.slider li:nth-of-type(1) a::after{
+    background: url(http://www.w3cplus.com/demo/css3/CSS3Fullbackground/sbg1.jpg) no-repeat center;
+}
+.slider li:nth-of-type(2) a::after{
+    background: url(http://www.w3cplus.com/demo/css3/CSS3Fullbackground/sbg2.jpg) no-repeat center;
+}
+.slider li:nth-of-type(3) a::after{
+    background: url(http://www.w3cplus.com/demo/css3/CSS3Fullbackground/sbg3.jpg) no-repeat center;
+}
+.slider li:nth-of-type(4) a::after{
+    background: url(http://www.w3cplus.com/demo/css3/CSS3Fullbackground/sbg4.jpg) no-repeat center;
+}
+.slider li:nth-of-type(5) a::after{
+    background: url(http://www.w3cplus.com/demo/css3/CSS3Fullbackground/sbg5.jpg) no-repeat center;
+}
+
+
+.slider li a::before{
+    z-index: 999;
+    background: black;
+    opacity: .4;
+}
+
+.slider li a:hover::before{
+    opacity: 0;
+}
