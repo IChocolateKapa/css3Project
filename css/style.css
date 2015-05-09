@@ -80,19 +80,19 @@
 }
 
 .slider li:nth-of-type(1) a::after{
-    background: url(http://www.w3cplus.com/demo/css3/CSS3Fullbackground/sbg1.jpg) no-repeat center;
+    background: url(../img/sbg1.jpg) no-repeat center;
 }
 .slider li:nth-of-type(2) a::after{
-    background: url(http://www.w3cplus.com/demo/css3/CSS3Fullbackground/sbg2.jpg) no-repeat center;
+    background: url(../img/sbg2.jpg) no-repeat center;
 }
 .slider li:nth-of-type(3) a::after{
-    background: url(http://www.w3cplus.com/demo/css3/CSS3Fullbackground/sbg3.jpg) no-repeat center;
+    background: url(../img/sbg3.jpg) no-repeat center;
 }
 .slider li:nth-of-type(4) a::after{
-    background: url(http://www.w3cplus.com/demo/css3/CSS3Fullbackground/sbg4.jpg) no-repeat center;
+    background: url(../img/sbg4.jpg) no-repeat center;
 }
 .slider li:nth-of-type(5) a::after{
-    background: url(http://www.w3cplus.com/demo/css3/CSS3Fullbackground/sbg5.jpg) no-repeat center;
+    background: url(../img/sbg5.jpg) no-repeat center;
 }
 
 
