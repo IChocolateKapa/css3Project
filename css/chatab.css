@@ -1,0 +1,44 @@
+/**
+ * Created by hpwu on 2015/5/13.
+ */
+@charset "utf-8";
+ul{
+    margin-left: 0;
+}
+ul li{
+    padding: 0px;
+    list-style: none;
+}
+
+li{
+    /*display: inline-block;*/
+    cursor: pointer;
+    float: left;
+    background: lightgrey;
+    margin-left: 2px;
+    border: 1px solid white;
+    color: green;
+}
+.tabin{
+    z-index: 90;
+    background: white;
+    border: 1px lightgrey solid;
+    border-bottom: 1px white solid;
+    height: 20px;
+}
+.contentfirst{
+    z-index: -1;
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 43px;
+    clear: both;
+    width: 500px;
+    height: 300px;
+    color: green;
+    display: none;
+    border: 1px solid lightgrey;
+
+}
+.content{
+    display: block;
+}
