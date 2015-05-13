@@ -13,3 +13,4 @@ $(function(){
         $(this).addClass("tabin");
     })
 })
+//更方便的是，把li与div相应的赋同组ID，比如“a", "_a",这样在js里写代码时更方便
