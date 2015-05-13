@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>BreadCrumbs</title>
+    <style>
+        @font-face {
+            font-family: Delicious-BoldItalic;
+            src: url('fonts/Delicious-BoldItalic.otf');
+        }
+        @font-face {
+            font-family: flower;
+            src: url('fonts/Diavlo_BLACK_II_37.otf');
+        }
+        @font-face {
+            font-family: book;
+            src: url('fonts/Diavlo_BOOK_II_37.otf');
+        }
+        @font-face {
+            font-family: medium-f;
+            src: url('fonts/Diavlo_MEDIUM_II_37.otf');
+        }
+        #crumbs ul li{
+            list-style: none;
+            margin: -10px;
+        }
+        #crumbs ul li a {
+            display: block;
+            float: left;
+            height: 50px;
+            background: greenyellow;
+            text-align: center;
+            padding: 30px 40px 0 90px;
+            position: relative;
+            margin: 0 10px 0 0;
+            vertical-align: top;
+            font-size: 20px;
+            text-decoration: none;
+            color: green;
+            font-family: Delicious-BoldItalic;
+        }
+        #crumbs ul li a:after {
+            content: "";
+            z-index: 40;
+            border: 40px greenyellow solid;
+            border-color: transparent transparent transparent greenyellow;
+            position: absolute; right: -80px; top: 0;
+        }
+        #crumbs ul li a:before {
+            content: "";
+            z-index: 10;
+            border: 40px white solid;
+            border-color: transparent transparent transparent white;
+            position: absolute; left: 0; top: 0;
+        }
+
+        #crumbs ul li:first-child a {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            font-family: book;
+        }
+        #crumbs ul li:first-child a:before {
+            display: none;
+        }
+
+        #crumbs ul li:nth-of-type(2) a{
+            font-family: medium-f;
+        }
+
+        #crumbs ul li:last-child a {
+            padding-right: 80px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-family: flower;
+        }
+        #crumbs ul li:last-child a:after {
+            display: none;
+        }
+
+        #crumbs ul li a:hover {
+            background: orange;
+            color: white;
+        }
+        #crumbs ul li a:hover:after {
+            border-left-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+
+<header id="crumbs">
+    <ul>
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+    </ul>
+</header>
+
+</body>
+</html>
